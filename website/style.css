@@ -30,6 +30,12 @@ body {
   position: absolute;
 }
 
+.main > div {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
 .topWrapper {
   /* outline: 1px red solid;
   padding: 20px;

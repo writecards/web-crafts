@@ -1,0 +1,111 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  cursor: cell;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+}
+.homecontainer {
+  border-radius: 25vw;
+  border: black dashed;
+  width: 25vw;
+  height: 25vw;
+  margin: auto;
+  margin-top: 15%;
+  text-align: center;
+  vertical-align: auto;
+  /* padding: 20vh 0; */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vh;
+}
+
+.homecontainer:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.p1container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.one {
+  grid-area: 2 / 2 / 3 / 3;
+  background-color: blueviolet;
+  width: 12vw;
+  height: 12vw;
+  border-radius: 12vw;
+  font-size: 1.5vh;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  text-align: center;
+  vertical-align: auto;
+}
+
+.two {
+  grid-area: 1 / 4 / 2 / 5;
+  background-color: crimson;
+  width: 12vw;
+  height: 12vw;
+  border-radius: 12vw;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vh;
+  display: grid;
+  text-align: center;
+  vertical-align: auto;
+}
+
+.three {
+  grid-area: 3 / 3 / 4 / 4;
+  background-color: darkblue;
+  width: 12vw;
+  height: 12vw;
+  border-radius: 12vw;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vh;
+  display: grid;
+  text-align: center;
+  vertical-align: auto;
+}
+
+.four {
+  grid-area: 3 / 5 / 4 / 6;
+  background-color: darkorange;
+  width: 12vw;
+  height: 12vw;
+  border-radius: 12vw;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vh;
+  display: grid;
+  text-align: center;
+  vertical-align: auto;
+}
+
+.five {
+  grid-area: 4 / 4 / 5 / 5;
+  background-color: darkseagreen;
+  width: 12vw;
+  height: 12vw;
+  border-radius: 12vw;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vh;
+  display: grid;
+  text-align: center;
+  vertical-align: auto;
+}
