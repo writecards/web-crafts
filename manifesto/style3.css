@@ -1,0 +1,67 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  cursor: cell;
+  background-color: rgb(239, 255, 169);
+  margin: 0%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.main {
+  font-size: 4vh;
+  /* filter: blur(0.7rem); */
+  /* background-color: aquamarine; */
+}
+
+/* .main:hover {
+  filter: blur(0);
+} */
+
+@-webkit-keyframes small_blur {
+  0% {
+    -webkit-filter: blur(0px);
+  }
+  50% {
+    -webkit-filter: blur(15px);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+  }
+}
+
+@-webkit-keyframes big_blur {
+  0% {
+    -webkit-filter: blur(85px);
+  }
+  50% {
+    -webkit-filter: blur(0px);
+  }
+  95% {
+    -webkit-filter: blur(0px);
+  }
+  100% {
+    -webkit-filter: blur(85px);
+  }
+}
+
+.blurry {
+  color: transparent;
+  text-shadow: 0 0 0px rgb(0, 0, 0);
+  /* filter: blur(1.2rem); */
+  -webkit-animation: small_blur 5s infinite;
+}
+
+/* .blurry:hover {
+  filter: blur(0);
+} */
+
+.blurry-r {
+  -webkit-animation: big_blur 9s infinite;
+}
