@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="clicker">click me</button>
+    <div id="count">0</div>
+    <script>
+      let b = document.querySelector("#clicker");
+      let countHolder = document.querySelector("#count");
+      //useful events: click, scroll, mousewheel, mouseover, mouseout, keypress, keyup, keydown
+      b.addEventListener("click", onClick);
+      function onClick() {
+        console.log("you click me", total);
+        total++;
+        countHolder.innerHTML = total;
+      }
+      let total = 0;
+    </script>
+  </body>
+</html>

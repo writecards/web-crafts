@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function randomP() {
+        let el = document.createElement("p");
+        el.textContent = "lol capitalism";
+        el.style.left = Math.random() * 200 + "px";
+        el.style.top = Math.random() * 200 + "px";
+        el.style.position = "absolute";
+        document.body.appendChild(el);
+      }
+      setInterval(randomP, 100);
+      randomP();
+    </script>
+  </body>
+</html>

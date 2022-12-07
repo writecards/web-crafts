@@ -1,0 +1,153 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  cursor: cell;
+  background-color: rgb(240, 235, 235);
+  margin: 0%;
+  background-image: url(faultline.jpeg);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  width: 100%;
+  height: 100vh;
+  padding: 0%;
+  overflow-y: auto;
+}
+
+/* @-webkit-keyframes move {
+  0% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 2000px;
+  }
+} */
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from {
+    -moz-transform: translateY(100%);
+  }
+  to {
+    -moz-transform: translateY(-100%);
+  }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from {
+    -webkit-transform: translateY(100%);
+  }
+  to {
+    -webkit-transform: translateY(-100%);
+  }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  to {
+    -moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+}
+
+.div1 {
+  grid-area: 3 / 5 / 4 / 6;
+  background-color: rgb(199, 199, 199);
+  height: 17vh;
+  word-wrap: break-word;
+  overflow-y: auto;
+  background-image: url(faultline.jpeg);
+}
+
+.div2 {
+  grid-area: 2 / 6 / 3 / 7;
+  background-color: rgb(97, 63, 63);
+  overflow-y: auto;
+  background-image: url(faultline.jpeg);
+}
+
+.div3 {
+  grid-area: 4 / 6 / 5 / 7;
+  background-color: rgb(250, 9, 9);
+  overflow-y: auto;
+  background-image: url(faultline.jpeg);
+}
+.div4 {
+  grid-area: 4 / 4 / 5 / 5;
+  background-color: brown;
+  overflow-y: auto;
+  background-image: url(faultline.jpeg);
+}
+.div5 {
+  grid-area: 5 / 7 / 6 / 8;
+  background-color: chartreuse;
+  overflow-y: auto;
+  background-image: url(faultline.jpeg);
+}
+.div6 {
+  grid-area: 2 / 8 / 3 / 9;
+  background-color: cornflowerblue;
+  overflow-y: auto;
+  background-image: url(faultline.jpeg);
+}
+.div7 {
+  grid-area: 4 / 8 / 5 / 9;
+  background-color: darkgreen;
+  overflow-y: auto;
+  background-image: url(faultline.jpeg);
+}
+.div8 {
+  grid-area: 5 / 3 / 6 / 4;
+  background-color: darkorange;
+  overflow-y: auto;
+  background-image: url(faultline.jpeg);
+}
+.div9 {
+  grid-area: 5 / 9 / 6 / 10;
+  background-color: darkseagreen;
+  overflow-y: auto;
+  background-image: url(faultline.jpeg);
+}
+.div10 {
+  grid-area: 2 / 3 / 3 / 4;
+  background-color: darkviolet;
+  overflow-y: auto;
+  background-image: url(faultline.jpeg);
+}
+.div11 {
+  grid-area: 3 / 7 / 4 / 8;
+  background-color: deepskyblue;
+  overflow-y: auto;
+  background-image: url(faultline.jpeg);
+}
+
+.paratext {
+  /* animation properties */
+  -moz-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+
+  -moz-animation: my-animation 5s linear infinite;
+  -webkit-animation: my-animation 5s linear infinite;
+  animation: my-animation 5s linear infinite;
+}
