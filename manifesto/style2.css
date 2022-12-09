@@ -26,6 +26,7 @@ a:visited {
   height: 100vh;
   padding: 0%;
   overflow-y: auto;
+  color: antiquewhite;
 }
 
 /* @-webkit-keyframes move {
