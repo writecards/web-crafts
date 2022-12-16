@@ -13,6 +13,7 @@ body {
   background-color: rgb(0, 0, 0);
   font-family: "Roboto Mono", monospace;
   cursor: crosshair;
+  color: rgb(209, 238, 209);
 }
 
 .main {
